@@ -3,10 +3,10 @@ The 'nodes' module contains methods to construct TF subgraphs computing the 1D o
 or IDWT. Intended to be used if you need a DWT in your own TF graph.
 """
 
-# import tensorflow as tf
-import tensorflow.compat.v1 as tf
-tf.disable_v2_behavior()
-print("disabled v2")
+import tensorflow as tf
+# import tensorflow.compat.v1 as tf
+# tf.disable_v2_behavior()
+# print("disabled v2")
 
 def cyclic_conv1d(input_node, filter_):
     """
