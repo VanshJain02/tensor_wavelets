@@ -4,8 +4,10 @@ implementation of the other modules.
 """
 
 import numpy as np
-import tensorflow as tf
-
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
+print("disabled v2")
 
 def adapt_filter(filter):
     """
