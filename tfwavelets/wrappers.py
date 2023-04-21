@@ -35,7 +35,8 @@ def dwt1d(signal, wavelet="haar", levels=1, npdtype=np.float32):
         signal,
         tfw.nodes.dwt1d,
         _parse_wavelet(wavelet),
-        levels
+        levels,
+        npdtype
     )
 
 
@@ -64,7 +65,8 @@ def dwt2d(signal, wavelet="haar", levels=1, npdtype=np.float32):
         signal,
         tfw.nodes.dwt2d,
         _parse_wavelet(wavelet),
-        levels
+        levels,
+        npdtype
     )
 
 
@@ -94,7 +96,8 @@ def idwt1d(signal, wavelet="haar", levels=1, npdtype=np.float32):
         signal,
         tfw.nodes.idwt1d,
         _parse_wavelet(wavelet),
-        levels
+        levels,
+        npdtype
     )
 
 
@@ -123,7 +126,8 @@ def idwt2d(signal, wavelet="haar", levels=1, npdtype=np.float32):
         signal,
         tfw.nodes.idwt2d,
         _parse_wavelet(wavelet),
-        levels
+        levels,
+        npdtype
     )
 
 
