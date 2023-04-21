@@ -6,7 +6,9 @@ used when you just want to compute the DWT/IDWT of a signal.
 
 import numpy as np
 import tfwavelets as tfw
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 
 
 def dwt1d(signal, wavelet="haar", levels=1, npdtype=np.float32):
