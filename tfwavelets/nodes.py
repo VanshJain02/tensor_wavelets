@@ -85,7 +85,7 @@ def cyclic_conv1d_alt(input_node, filter_):
     print(input_new.shape)
 
     # Convolve with periodic extension
-    result = tf.nn.conv1d(input_new, kernel_node[::-1], stride=1, padding="VALID")
+    result = tf.nn.conv2d(input_new, kernel_node[::-1], stride=1, padding="VALID")
 
     return result
 
