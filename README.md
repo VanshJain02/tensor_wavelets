@@ -3,7 +3,7 @@ The `tfwavelets` package is a library for computing Descrete Wavelet Transforms 
 
 To install, clone the repository and install with pip:
 ``` bash
-$ git clone https://github.com/UiO-CS/tf-wavelets.git
+$ git clone https://github.com/TekhDude1/tensor_wavelets.git
 $ cd tf-wavelets
 $ pip install .
 ```
